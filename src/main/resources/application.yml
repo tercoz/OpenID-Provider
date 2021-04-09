@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    username: sa
+    url: jdbc:h2:mem:testdb
+
+keycloak:
+  server:
+    contextPath: /auth
+    adminUser:
+      username: admin
+      password: admin
+    realmImportFile: test-realm.json
+
+logging:
+  level:
+    web: debug
